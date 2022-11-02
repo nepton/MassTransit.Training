@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ", "RabbitMQ\Rabbit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingContract", "TrainingContract\TrainingContract.csproj", "{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{97CC6D1C-724E-4EDB-B7E0-DCC8A3A07036}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CC6D1C-724E-4EDB-B7E0-DCC8A3A07036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CC6D1C-724E-4EDB-B7E0-DCC8A3A07036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CC6D1C-724E-4EDB-B7E0-DCC8A3A07036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CC6D1C-724E-4EDB-B7E0-DCC8A3A07036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
