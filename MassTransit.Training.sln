@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemory", "InMemory\InMemory.csproj", "{B38D5CF2-69DC-46A2-89C1-1E249EE072E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ", "RabbitMQ\RabbitMQ.csproj", "{BD87F746-74AD-4496-A0FD-57799052750F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingContract", "TrainingContract\TrainingContract.csproj", "{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B38D5CF2-69DC-46A2-89C1-1E249EE072E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38D5CF2-69DC-46A2-89C1-1E249EE072E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38D5CF2-69DC-46A2-89C1-1E249EE072E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38D5CF2-69DC-46A2-89C1-1E249EE072E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD87F746-74AD-4496-A0FD-57799052750F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD87F746-74AD-4496-A0FD-57799052750F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD87F746-74AD-4496-A0FD-57799052750F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD87F746-74AD-4496-A0FD-57799052750F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9A70A9-2B9B-4D20-8EA1-DC04430F379D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
