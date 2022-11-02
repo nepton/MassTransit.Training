@@ -39,6 +39,12 @@ var host = Host.CreateDefaultBuilder(args)
                         h.Password("guest");
                     });
                 cfg.ConfigureEndpoints(context);
+                
+                // explicitly declare the queue consumer by the queue name, PrefetchCount etc.
+                // cfg.ReceiveEndpoint("order-service", e =>
+                // {
+                //     e.ConfigureConsumer<PlaceOrderConsumer>(context);
+                // });
             });
         });
         services.AddOptions<MassTransitHostOptions>()
