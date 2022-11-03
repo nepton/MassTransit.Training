@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Outbox-FB5F7AEB-894F-4195-B93F-76C7C87C4C8D</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit" Version="8.0.7" />
+        <PackageReference Include="MassTransit.EntityFrameworkCore" Version="8.0.7" />
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <PackageReference Include="Serilog" Version="2.12.0" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TrainingContract\TrainingContract.csproj" />
+    </ItemGroup>
+</Project>
