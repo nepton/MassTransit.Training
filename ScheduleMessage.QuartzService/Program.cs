@@ -26,12 +26,6 @@ var host = Host.CreateDefaultBuilder(args)
                 });
 
                 s.UseJsonSerializer();
-
-                s.UseClustering(c =>
-                {
-                    c.CheckinMisfireThreshold = TimeSpan.FromSeconds(20);
-                    c.CheckinInterval         = TimeSpan.FromSeconds(10);
-                });
             });
         });
 

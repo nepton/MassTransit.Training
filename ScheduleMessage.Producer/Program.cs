@@ -19,13 +19,6 @@ var host = Host.CreateDefaultBuilder(args)
             configure.SetSnakeCaseEndpointNameFormatter();
             configure.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host("localhost",
-                    "/",
-                    h =>
-                    {
-                        h.Username("guest");
-                        h.Password("guest");
-                    });
                 cfg.ConfigureEndpoints(context);
 
                 // 通知 rabbitmq 把延迟消息发送到 MassTransit.Scheduling:ScheduleMessage 交换机
