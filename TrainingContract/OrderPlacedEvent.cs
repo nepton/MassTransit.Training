@@ -33,9 +33,9 @@ public record OrderPlacedEvent
 //  "headers": {},
 //  "host": {
 //    "machineName": "NEPTON-WORK",
-//    "processName": "RabbitMQ",
+//    "processName": "ScheduleMessage.Quartz",
 //    "processId": 29820,
-//    "assembly": "RabbitMQ",
+//    "assembly": "ScheduleMessage.Quartz",
 //    "assemblyVersion": "1.0.0.0",
 //    "frameworkVersion": "6.0.10",
 //    "massTransitVersion": "8.0.7.0",

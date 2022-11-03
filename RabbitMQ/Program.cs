@@ -20,12 +20,12 @@ var host = Host.CreateDefaultBuilder(args)
             configure.AddConsumer<RabbitMQ.Consumers.OrderPlacedConsumer>()
                 .Endpoint(e =>
                 {
-                    e.Name = "order-service";   // specify the queue name
+                    e.Name = "order-service"; // specify the queue name
                 });
             configure.AddConsumer<RabbitMQ.NewConsumers.OrderPlacedConsumer>()
                 .Endpoint(e =>
                 {
-                    e.Name = "order-service";   // specify the queue name
+                    e.Name = "order-service"; // specify the queue name
                 });
 
             configure.SetKebabCaseEndpointNameFormatter();
@@ -39,7 +39,25 @@ var host = Host.CreateDefaultBuilder(args)
                         h.Password("guest");
                     });
                 cfg.ConfigureEndpoints(context);
-                
+
+                // 共执行5次，每次间隔10秒
+                cfg.UseRetry(options =>
+                {
+                    options.Interval(5, TimeSpan.FromSeconds(10));
+                });
+
+                // 限流
+                cfg.UseRateLimit(1000, TimeSpan.FromSeconds(100));
+
+                // 熔断
+                cfg.UseCircuitBreaker(options =>
+                {
+                    options.TrackingPeriod  = TimeSpan.FromSeconds(10);
+                    options.TripThreshold   = 15;
+                    options.ActiveThreshold = 10;
+                    options.ResetInterval   = TimeSpan.FromSeconds(30);
+                });
+
                 // explicitly declare the queue consumer by the queue name, PrefetchCount etc.
                 // cfg.ReceiveEndpoint("order-service", e =>
                 // {
