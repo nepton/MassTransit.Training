@@ -12,7 +12,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePublisher", "Console
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorWebApp", "MediatorWebApp\MediatorWebApp.csproj", "{220D4DC5-AD76-4786-A48A-099370A1BB0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleMessage.Quartz", "ScheduleMessage.Quartz\ScheduleMessage.Quartz.csproj", "{47CCB299-8C21-4178-8E44-91E07037F2B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleMessage.Producer", "ScheduleMessage.Producer\ScheduleMessage.Producer.csproj", "{47CCB299-8C21-4178-8E44-91E07037F2B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleMessage.Consumer", "ScheduleMessage.Consumer\ScheduleMessage.Consumer.csproj", "{CD5AE791-5FA3-46D7-A1DC-1630D65368C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleMessage.QuartzService", "ScheduleMessage.QuartzService\ScheduleMessage.QuartzService.csproj", "{FA833311-F0A2-495D-B4BC-14DFC518958C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +52,13 @@ Global
 		{47CCB299-8C21-4178-8E44-91E07037F2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47CCB299-8C21-4178-8E44-91E07037F2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47CCB299-8C21-4178-8E44-91E07037F2B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5AE791-5FA3-46D7-A1DC-1630D65368C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5AE791-5FA3-46D7-A1DC-1630D65368C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5AE791-5FA3-46D7-A1DC-1630D65368C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5AE791-5FA3-46D7-A1DC-1630D65368C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA833311-F0A2-495D-B4BC-14DFC518958C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA833311-F0A2-495D-B4BC-14DFC518958C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA833311-F0A2-495D-B4BC-14DFC518958C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA833311-F0A2-495D-B4BC-14DFC518958C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -33,9 +33,9 @@ public record OrderPlacedEvent
 //  "headers": {},
 //  "host": {
 //    "machineName": "NEPTON-WORK",
-//    "processName": "ScheduleMessage.Quartz",
+//    "processName": "ScheduleMessage.Producer.Engine.Consumer",
 //    "processId": 29820,
-//    "assembly": "ScheduleMessage.Quartz",
+//    "assembly": "ScheduleMessage.Producer.Engine.Consumer",
 //    "assemblyVersion": "1.0.0.0",
 //    "frameworkVersion": "6.0.10",
 //    "massTransitVersion": "8.0.7.0",

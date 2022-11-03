@@ -5,7 +5,6 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>dotnet-RabbitMQ-7B4835E0-A214-4A50-8EEA-E946095C5E24</UserSecretsId>
-        <RootNamespace>ScheduleMessage</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
