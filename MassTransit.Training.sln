@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schedule", "Schedule", "{9C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outbox", "Outbox\Outbox.csproj", "{21FD1C3F-96EA-468C-8503-57F77527FFAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga", "Saga\Saga.csproj", "{326D5E2D-0FBF-42B2-A048-F91A769CE05C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{21FD1C3F-96EA-468C-8503-57F77527FFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21FD1C3F-96EA-468C-8503-57F77527FFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21FD1C3F-96EA-468C-8503-57F77527FFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326D5E2D-0FBF-42B2-A048-F91A769CE05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326D5E2D-0FBF-42B2-A048-F91A769CE05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326D5E2D-0FBF-42B2-A048-F91A769CE05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326D5E2D-0FBF-42B2-A048-F91A769CE05C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD5AE791-5FA3-46D7-A1DC-1630D65368C5} = {9CB5888C-D6F3-48AC-BD9C-A346FE280EDD}
