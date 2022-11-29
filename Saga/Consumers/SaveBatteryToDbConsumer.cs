@@ -15,21 +15,22 @@ public class SaveBatteryToDbConsumer : IConsumer<SaveBatteryToDbEvent>
     {
         _logger.LogInformation("Received CreateBatteryOnDbEvent {MessageCorrelateId} =====================", context.Message.CorrelationId);
 
-        // 10% chance of failure
-        if (new Random().Next(1, 10) == 1)
-        {
-            context.Publish(new SaveBatteryToDbFailureEvent()
-            {
-                CorrelationId = context.Message.CorrelationId,
-                Message       = "Failed to save battery to db"
-            });
-            return Task.CompletedTask;
-        }
+        // // 10% chance of failure
+        // if (new Random().Next(1, 10) == 1)
+        // {
+        //     context.Publish(new SaveBatteryToDbFailureEvent()
+        //     {
+        //         CorrelationId = context.Message.CorrelationId,
+        //         Message       = "Failed to save battery to db"
+        //     });
+        //     return Task.CompletedTask;
+        // }
 
         context.Publish(new SaveBatteryToDbSuccessEvent
         {
             BatteryId     = Guid.NewGuid(),
-            CorrelationId = context.Message.CorrelationId
+            CorrelationId = context.Message.CorrelationId,
+            OrderNumber   = "123456789"
         });
         return Task.CompletedTask;
     }

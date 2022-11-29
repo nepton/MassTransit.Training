@@ -12,4 +12,6 @@ public class CreateBatteryState : SagaStateMachineInstance
     public Guid CorrelationId { get; set; }
 
     public int CurrentState { get; set; }
+    
+    public Guid? SaveBatteryToTbRequestId { get; set; }
 }
