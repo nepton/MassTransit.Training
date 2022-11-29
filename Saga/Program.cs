@@ -8,7 +8,7 @@ var host = Host.CreateDefaultBuilder(args);
 host.ConfigureLogging(x =>
 {
     Log.Logger = new LoggerConfiguration()
-        .MinimumLevel.Debug()
+        .MinimumLevel.Information()
         .WriteTo.Console()
         .CreateLogger();
 

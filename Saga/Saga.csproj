@@ -17,10 +17,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\TrainingContract\TrainingContract.csproj" />
     </ItemGroup>
 </Project>

@@ -19,10 +19,9 @@ public class Worker : BackgroundService
         while (!stoppingToken.IsCancellationRequested)
         {
             // _publishEndpoint
-            await _bus.Publish(new PlaceOrderEvent()
+            await _bus.Publish(new CreateBatteryEvent()
                 {
-                    OrderId = NewId.NextGuid(),
-                    OrderNumber = "1234567890"
+                    CorrelationId = NewId.NextGuid(),
                 },
                 stoppingToken);
 
