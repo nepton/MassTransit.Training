@@ -7,5 +7,6 @@ namespace TrainingContract
         public string?  OrderNumber { get; set; }
         public DateTime Timestamp   { get; set; }
         public Guid     HostId      { get; set; }
+        public Guid     OrderId     { get; set; }
     }
 }
